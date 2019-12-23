@@ -1,0 +1,42 @@
+[
+  {
+    "model" : "todo.Todo",
+    "pk" : 1,
+    "fields": {
+      "title": "Create model",
+      "body": "Create the model of Todo"
+    }
+  },
+  {
+    "model": "todo.Todo",
+    "pk" : 2,
+    "fields": {
+      "title": "Create dummy data",
+      "body": "Populate the database with dummy data"
+    }
+  },
+  {
+    "model": "todo.Todo",
+    "pk" : 3,
+    "fields": {
+      "title": "Create schema with Graphene",
+      "body": "In todo app folder create schema.py and define GraphQl types in it"
+    }
+  },
+  {
+    "model": "todo.Todo",
+    "pk" : 4,
+    "fields": {
+      "title": "Create Query",
+      "body": "In the same schema.py file create the Query types"
+    }
+  },
+  {
+    "model": "todo.Todo",
+    "pk" : 5,
+    "fields": {
+      "title": "Create Mutations",
+      "body": "Creating mutation requires more work than creating queries"
+    }
+  }
+]
