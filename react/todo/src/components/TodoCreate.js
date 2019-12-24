@@ -10,10 +10,10 @@ class TodoCreate extends React.Component {
         const className = `Field ${meta.error && meta.touched ? 'error': ''}`
         return (
             <div className={className}>
-                <div class="ui action input fluid">
+                <div className="ui action input fluid">
                     <input {...input} autoComplete='off' type="text" placeholder={label} />
                     {this.renderError(meta)}
-                    <button class="ui button">Add Todo</button>
+                    <button className="ui button">Add Todo</button>
                 </div>
             </div>
         );
@@ -44,7 +44,7 @@ class TodoCreate extends React.Component {
                 <Field name="title"
                 component = {this.renderInput}
                 label= "Enter Todo"/>
-                <div class="ui hidden divider"></div>
+                <div className="ui hidden divider"></div>
                 </div>
             </form>
         );

@@ -6,9 +6,9 @@ import TodoCreate from'./TodoCreate'
 const App = () => {
   return (
     
-    <div className="ui container">
-      <h2 class="ui center aligned icon header">
-      <i class="circular clipboard outline icon"></i>
+    <div className="todo-list">
+      <h2 className="ui center aligned icon header">
+      <i className="circular clipboard outline icon"></i>
         Todo
       </h2>
       <div><TodoCreate /></div>

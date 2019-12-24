@@ -11,21 +11,26 @@ class TodoList extends React.Component {
     renderList() {
         return this.props.todos.slice(0).reverse().map((todo, index) => {
             return (
-                <div className="item" key = {index}>
-                    <i className="large middle aligned clipboard outline icon"/>
-                    <div className="content">
-                        <div className="description">
-                            <h2>{todo.title}</h2>
-                        </div>
-                    </div>
-                </div> 
+                    <label className="todo" key = {index}>
+                    <input className="todo__state" type="checkbox" />
+    
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 25" className="todo__icon">
+                    <use xlinkHref="#todo__line" className="todo__line"></use>
+                    <use xlinkHref="#todo__box" className="todo__box"></use>
+                <use xlinkHref="#todo__check" className="todo__check"></use>
+                <use xlinkHref="#todo__circle" className="todo__circle"></use>
+                 </svg>
+
+                <div className="todo__text description">{todo.title}</div>
+    
+                </label>
             );
         });
     }
 
     render() {
         return (
-            <div className="ui relaxed divided list">{this.renderList()}</div>
+            <span>{this.renderList()}</span>
         );
     }
 }
