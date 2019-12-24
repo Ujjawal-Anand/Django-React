@@ -13,7 +13,7 @@ class TodoCreate extends React.Component {
                 <div className="ui action input fluid">
                     <input {...input} autoComplete='off' type="text" placeholder={label} />
                     {this.renderError(meta)}
-                    <button className="ui button">Add Todo</button>
+                    <button className="ui primary button">Add Todo</button>
                 </div>
             </div>
         );
@@ -32,7 +32,7 @@ class TodoCreate extends React.Component {
     };
 
     onSubmit = formValue => {
-        this.props.createTodo(formValue)
+        this.props.createTodo(formValue);
     }
 
     
